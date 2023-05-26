@@ -79,13 +79,13 @@ const MoviesCard = ({ movie, tabName, fetchMovies }: MovieCardProps) => {
                 {tabName === "favourite" ? (
                     <>
                         <button className="Favourites" onClick={() => removeFromFav(movie)}>
-                            Remove From Favourites <ImCross />
+                            Remove From Favourites 
                         </button>
                     </>
                 ) : (
                     <>
                         <button className="Favourites" onClick={() => addToFav(movie)}>
-                            Add To Favourites
+                            Add To Favourites <ImHeart />
                         </button>
                     </>
                 )}
